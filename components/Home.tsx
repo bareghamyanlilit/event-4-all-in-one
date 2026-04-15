@@ -54,23 +54,32 @@ export default function Home() {
           </button>
           <MusicPlayer isPlaying={isPlaying} />
         </div>
+
         {/* 1 img */}
         <div
-          className="min-h-screen text-[#F2F2F2]  max-w-xl m-auto bg-cover  bg-no-repeat  bg-center  text-vrayi flex flex-col items-center justify-end text-center p-8 "
+          className="min-h-[95vh] text-[#F2F2F2]  max-w-xl m-auto bg-cover  bg-no-repeat  bg-center  text-vrayi flex flex-col items-center justify-end text-center p-8 "
           style={{
             backgroundImage: "url('/first.jpg')",
           }}
         >
-          <h1 className=" text-[#F2F2F2] text-4xl  text-">{text.firstwho}</h1>
+          <h1 className=" text-[#F2F2F2] text-4xl FontMassis">
+            {text.firstwho}
+          </h1>
           <p className="text-[#F2F2F2]  mt-10 mb-15 FontMassis text-[32px]">
             {text.firstTxt}
           </p>
         </div>
 
         <section className="text-center FontMassis tracking-[8%] px-5 py-15">
+          <motion.h2 {...anim} className="mb-5 font-bold text-vrayi text-2xl">
+            {text.title1}
+          </motion.h2>
+          <motion.p {...anim} className=" text-2xl text-vrayi">
+            {text.descr1}
+          </motion.p>
           <motion.h2
             {...anim}
-            className="tracking-widest relative z-0 text-vrayi text-4xl w-max"
+            className=" mt-15 my-10 relative z-0 text-vrayi text-4xl w-max"
           >
             Միջոցառմանը մնաց
             <p className=" absolute w-max -z-1 text-5xl -top-1 left-1/2 -translate-x-1/2 text-hetevi ">
@@ -78,13 +87,6 @@ export default function Home() {
             </p>
           </motion.h2>
           <TimeBox />
-
-          <motion.h2 {...anim} className=" mb-5 text-vrayi text-2xl">
-            {text.title1}
-          </motion.h2>
-          <motion.p {...anim} className=" text-2xl text-vrayi">
-            {text.descr1}
-          </motion.p>
         </section>
 
         {/* 2 img */}

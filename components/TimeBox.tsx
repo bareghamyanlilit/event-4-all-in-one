@@ -41,7 +41,7 @@ export function TimeBox() {
     return () => clearInterval(timer);
   }, []);
   return (
-     <motion.section {...anim}  className=" my-10 FontMassis text-center  text-vrayi">
+     <motion.section {...anim}  className=" my-5 FontMassis text-center  text-vrayi">
 
       <div className="">
         {timeLeft.finished ? (
