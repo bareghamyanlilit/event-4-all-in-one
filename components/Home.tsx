@@ -79,7 +79,7 @@ export default function Home() {
           </motion.p>
           <motion.h2
             {...anim}
-            className=" mt-15 my-10 relative z-0 text-vrayi text-4xl w-max"
+            className=" mt-15 my-10 relative z-0 text-vrayi text-4xl w-max mx-auto"
           >
             Միջոցառմանը մնաց
             <p className=" absolute w-max -z-1 text-5xl -top-1 left-1/2 -translate-x-1/2 text-hetevi ">
