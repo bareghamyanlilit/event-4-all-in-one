@@ -10,7 +10,6 @@ import { TimeBox } from "@/components/TimeBox";
 import { Footer } from "./footer";
 import Image from "next/image";
 import AttendanceGuests from "./RSVP";
-import { Tables } from "./Tables";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -146,8 +145,6 @@ export default function Home() {
 
         {/* RSVP */}
         <AttendanceGuests />
-        {/* sexanner */}
-        <Tables />
 
         <Footer />
       </div>
